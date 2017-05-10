@@ -136,6 +136,11 @@ int main(int argc, char* argv[]) {
   for (size_t k = 0; k < N; ++k) {
     // start filtering from the second frame (the speed is unknown in the first
     // frame)
+	// If first frame is from LASER measurement, skip this frame as velocity Vx and Vy are unknown
+	// and take next frame RADAR measurements for initialization of state vector
+	if (k==0 &&(measurement_pack_list[k].sensor_type_ == MeasurementPackage::LASER)){
+	continue;
+	}
     fusionEKF.ProcessMeasurement(measurement_pack_list[k]);
 
     // output the estimation
