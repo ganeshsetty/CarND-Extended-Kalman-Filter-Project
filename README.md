@@ -1,6 +1,7 @@
-# Extended Kalman Filter Project Starter Code
+# Extended Kalman Filter Project Solution
 Self-Driving Car Engineer Nanodegree Program
 
+This project is first project under Sensor Fusion topic of Term2. The objective of this project is designing Extended Kalman Filter to estimate the position px, py and velocity vx,vy of the object being tracked by fusing the noisy semsor measurements from LIDAR and RADAR.The impelementation is in C++ and uses the starter code provided by udacity(forked).
 ---
 
 ## Dependencies
