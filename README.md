@@ -37,3 +37,8 @@ The RMSE accuracy obtained as :[px,py,vx,vy] --> [0.0935411, 0.0848205, 0.310778
    * On windows, you may need to run: `cmake .. -G "Unix Makefiles" && make`
 4. Run it: `./ExtendedKF ../data/obj_pose-laser-radar-synthetic-input.txt obj_pose-laser-radar-synthetic-output.txt > logs.log
 
+## Summary
+
+For the new dataset obj_pose-laser-radar-synthetic-input.txt as input, the RMSE is optimized by incorporating the angle 'phi' normalization while calculating 'h' for EKF and also y(1) in UpdateEKF function. Also RMSE accuracy is improved by considering the first RADAR measurement for initializing state vector as it has velocity data also. 
+
+Future: Need to try with new simulator as am still working on bringing out in windows platform as per procedure provided by udacity.
