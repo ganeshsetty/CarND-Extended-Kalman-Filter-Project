@@ -16,7 +16,9 @@ This project is first project under Sensor Fusion topic of Term2. The objective 
 * **results**: Has EKF output file obj_pose-laser-radar-ekf-output.txt, logs and plots.
      
  
-## Basic Build Instructions
+## Results with plots
+
+
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
