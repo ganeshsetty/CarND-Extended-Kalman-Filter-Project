@@ -19,6 +19,15 @@ This project is first project under Sensor Fusion topic of Term2. The objective 
 ## Results with plots
 
 
+![](./results/KF_Meas_GT_plot.png)
+
+
+To differentiate clearly KF-estimate line and Ground Truth line plots, only those are plotted as below:
+
+![](./results/KF_GT_plot.png)
+
+
+The RMSE accuracy obtained as :[px,py,vx,vy] --> [0.0935411, 0.0848205, 0.310778, 0.423821] against the thresholded (mentioned as rubric)[.11, .11, 0.52, 0.52]
 
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
