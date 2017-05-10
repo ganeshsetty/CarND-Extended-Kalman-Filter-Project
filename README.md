@@ -6,17 +6,16 @@ This project is first project under Sensor Fusion topic of Term2. The objective 
 
 ## Repository files structure
 
-* cmake >= 3.5
- * All OSes: [click here for installation instructions](https://cmake.org/install/)
-* make >= 4.1
-  * Linux: make is installed by default on most Linux distros
-  * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
-  * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
-* gcc/g++ >= 5.4
-  * Linux: gcc / g++ is installed by default on most Linux distros
-  * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
-  * Windows: recommend using [MinGW](http://www.mingw.org/)
-
+* **src**: This folder has source code of the project
+     - main.cpp : Modified to take first RADAR measurement for initialization of state vector to have velocity information
+     - tools.cpp : Implements the function for RMSE and Jacobian matrix calculations.
+     - FusionEKF.cpp : Initializes the EKF and calls predict and updation functions
+     - kalman_filter.cpp: Implements the predict function and updation functions(LIDAR standard KF and RADAR Extended KF)
+     
+* **data**: Has input data obj_pose-laser-radar-synthetic-input.txt
+* **results**: Has EKF output file obj_pose-laser-radar-ekf-output.txt, logs and plots.
+     
+ 
 ## Basic Build Instructions
 
 1. Clone this repo.
